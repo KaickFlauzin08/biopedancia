@@ -389,53 +389,24 @@ img{
 
 /*responsivelidade*/
 @media (max-width: 768px) {
-    /* ajustes para nav em telas pequenas */
     nav {
-        height: auto;
-        padding: 12px 16px;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 8px;
+        height: auto; 
+        padding: 20px 0;
     }
 
-    /* reduz tamanho do título no nav */
-    nav h1 {
-        font-size: 28px;
-        margin: 0;
-        color: #ffffff;
-    }
-
-    /* layout do menu mais compacto e centralizado */
     .nav-menu {
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 8px;
-        justify-content: center;
-        width: 100%;
-        padding: 6px 0;
+        flex-direction: column; 
+        align-items: center;
+        gap: 15px; 
+        margin-top: 15px;
     }
 
-    /* botões do menu com área de clique maior e visual agradável */
     .nav-menu a {
-        display: inline-block;
-        padding: 8px 12px;
-        font-size: 18px;
-        border-radius: 8px;
-        background: rgba(255, 255, 255, 0.02);
-        transition: transform 0.18s ease, background 0.18s ease, color 0.18s ease;
+        font-size: 24px; 
     }
 
-    /* efeito mais sutil no hover para mobile */
-    .nav-menu a:hover {
-        transform: translateY(-2px) scale(1.03);
-        background: rgba(255, 255, 255, 0.06);
-        color: #ffffff;
-        text-decoration: none;
-    }
-
-    /* destaca o botão de contato no nav */
-    #open-contact {
+    #open-contact{
         padding: 8px 12px;
         border-radius: 8px;
         background: #eaa90c;
@@ -444,26 +415,15 @@ img{
         margin-left: 6px;
     }
 
-    /* garante que imagens laterais não fiquem grandes demais */
-    .direita img {
-        max-width: 260px;
-    }
-
-    /* pequenas melhorias de espaçamento gerais */
-    nav .nav-menu,
-    nav h1 {
-        -webkit-tap-highlight-color: transparent;
-    }
     .principal {
-        flex-direction: column;
-        text-align: center;
+        flex-direction: column-reverse;
         height: auto;
-        gap: 30px;
-        padding: 20px 0;
+        padding: 30px 20px;
+        text-align: center;
     }
 
-    .esqueda, .direita {
-        max-width: 90%;
+    .esqueda {
+        max-width: 100%;
     }
 
     .esqueda h2 {
@@ -475,6 +435,23 @@ img{
     }
 
     .direita img {
-        max-width: 300px;
+        max-width: 250px;
+        margin-bottom: 20px;
+    }
+
+    .direita img:hover {
+        transform: scale(1.1);
+    }
+
+    /* Ajusta as tabelas para telas pequenas */
+    .container table, 
+    .container th, 
+    .container td {
+        font-size: 14px;
+        padding: 6px;
+    }
+
+    .container h2 {
+        font-size: 28px;
     }
 }
