@@ -1,0 +1,388 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f0f0;
+}
+
+nav {
+    height: 100px;
+    background-color: #113d60;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: ;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #eaa90c;
+    font-size: 28px;
+}
+
+.nav-menu a:hover {
+    color: white;
+    font-size: 35px;
+    text-decoration: underline;
+    transform: scale(1.08);
+    transition: transform 0.18s ease, color 0.18s ease;
+}
+
+h1 {
+    color: white;
+    font-size: 58px;
+}
+
+/* Estilos para a seção principal */
+.principal {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: calc(100vh - 100px);
+    font-family: 'Geologica', sans-serif;
+}
+
+.esqueda {
+    max-width: 50%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.esqueda h2 {
+    font-size: 54px;
+    color: #113d60;
+    margin-bottom: 20px;
+}
+
+.esqueda p {
+    font-size: 24px;
+    color: #333333;
+    line-height: 1.6;
+}
+
+.direita img {
+    max-width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.direita img:hover {
+    transform: scale(1.6);
+    transition: transform 0.3s ease;
+}
+
+/* Estilos para a seção do meio principal */
+.meio-principal {
+    max-width: 80%;
+    margin: 40px auto;
+    text-align: center;
+    font-family: 'Geologica', sans-serif;
+}
+
+.meio-principal h2 {
+    font-size: 48px;
+    color: #113d60;
+    margin-bottom: 20px;
+}
+
+.meio-principal h4 {
+    font-size: 36px;
+    color: #113d60;
+    margin-bottom: 20px;
+}
+
+.meio-principal p {
+    font-size: 20px;
+    color: #333333;
+    line-height: 1.6;
+}
+
+.risco {
+    width: 100px;
+    height: 5px;
+    background-color: #113d60;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+
+.informacoes {
+    max-width: 60%;
+    margin: 20px auto;
+    font-family: 'Geologica', sans-serif;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.informacoes h3 {
+    font-size: 32px;
+    color: #113d60;
+    margin-bottom: 15px;
+}
+
+.informacoes ul {
+    list-style-type: none;
+}
+
+.informacoes li {
+    font-size: 20px;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.informacoes li strong {
+    color: #113d60;
+}
+
+/* Estilos para a seção do paciente */
+.foto-paciente {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.foto-paciente img {
+    max-width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.foto-paciente img:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+
+.foto-paciente p {
+    font-size: 18px;
+    color: #333333;
+    margin-top: 10px;
+    font-family: 'Geologica', sans-serif;
+}
+
+/* cardapio semanal */
+
+.cardapio-semanal {
+    max-width: 80%;
+    margin: 40px auto;
+    font-family: 'Geologica', sans-serif;
+}
+
+.cardapio-semanal h2 {
+    font-size: 48px;
+    color: #113d60;
+    margin-bottom: 20px;
+}
+
+.cardapio-semanal h3 {
+    font-size: 36px;
+    color: #113d60;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.cardapio-semanal ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cardapio-semanal li {
+    font-size: 20px;
+    color: #333333;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #eaeaea;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cardapio-semanal li:hover {
+    background-color: #d1d1d1;
+}
+
+.cardapio-academia {
+    max-width: 80%;
+    margin: 40px auto;
+    font-family: 'Geologica', sans-serif;
+    margin-bottom: 60px;
+}
+
+.cardapio-academia h2 {
+    font-size: 48px;
+    color: #113d60;
+    margin-bottom: 20px;
+}
+
+.cardapio-academia h3 {
+    font-size: 36px;
+    color: #113d60;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.cardapio-academia ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cardapio-academia li {
+    font-size: 20px;
+    color: #333333;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #eaeaea;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cardapio-academia li:hover {
+    background-color: #d1d1d1;
+}
+
+.container {
+    max-width: 80%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Geologica', sans-serif;
+}
+
+.container h1 {
+    font-size: 48px;
+    color: #113d60;
+    margin-bottom: 20px;
+}
+
+.container p {
+    font-size: 20px;
+    color: #333333;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.container h2 {
+    font-size: 36px;
+    color: #113d60;
+    margin: 20px 0 10px;
+}
+
+.container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.container th,
+.container td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.container th {
+    background-color: #f2f2f2;
+    color: #113d60;
+}
+
+.destaque {
+    font-weight: bold;
+    color: #eaa90c;
+}
+
+.container table tr:hover {
+    background-color: #f9f9f9;
+}
+
+footer {
+    background-color: #113d60;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 40px;
+    font-family: 'Geologica', sans-serif;
+}
+
+footer p {
+    color: white;
+    font-size: 16px;
+}
+
+img{
+    cursor: pointer;
+}
+/**/
+/* Botão no nav */
+#open-contact {
+    cursor: pointer;
+    padding: 0.25rem 0.5rem;
+    display: inline-block;
+}
+
+/* Estilo do dialog */
+.contact-dialog {
+    max-width: 480px;
+    width: 90%;
+    border-radius: 8px;
+    padding: 1rem;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    font-family: inherit;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact-dialog h3 {
+    margin: 0 0 0.5rem 0;
+}
+
+.contact-dialog label {
+    display: block;
+    margin: 0.45rem 0;
+    font-size: 0.95rem;
+}
+
+.contact-dialog input,
+.contact-dialog textarea {
+    width: 100%;
+    padding: 0.45rem;
+    margin-top: 0.25rem;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.dialog-actions {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: flex-end;
+    margin-top: 0.75rem;
+}
+
+.contact-dialog .btn-send {
+    background: #2c7be5;
+    color: #fff;
+    border: none;
+    padding: 0.45rem 0.6rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.contact-dialog .btn-close {
+    background: #6c757d;
+    color: #fff;
+    border: none;
+    padding: 0.45rem 0.6rem;
+    border-radius: 6px;
+    cursor: pointer;
+}

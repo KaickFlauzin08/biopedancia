@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BioPedancia</title>
+    <link rel="icon" href="https://uploads.metroimg.com/wp-content/uploads/2021/06/14183215/Melhores_Marmitas_Termicas_.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div>
+            <h1>Bioimpedância</h1>
+        </div>
+        <div class="nav-menu">
+            <a href="#paciente">+SOBRE</a>
+            <a href="#cardapio">CARDAPIO</a>
+            <a href="#imc">CALCULO DE IMC</a>
+            <a href="#" id="open-contact">DÚVIDA / CONTATO</a>
+
+            <dialog id="contactDialog" aria-labelledby="contactTitle" class="contact-dialog">
+                <form id="contactForm">
+                    <h3 id="contactTitle">Dúvidas e Contato</h3>
+
+                    <label>
+                        Nome
+                        <input type="text" name="nome" required />
+                    </label>
+
+                    <label>
+                        Email
+                        <input type="email" name="email" required />
+                    </label>
+
+                    <label>
+                        Mensagem
+                        <textarea name="mensagem" rows="4" required></textarea>
+                    </label>
+
+                    <div class="dialog-actions">
+                        <button type="submit" class="btn-send">Enviar</button>
+                        <button type="button" id="closeContact" class="btn-close">Fechar</button>
+                    </div>
+                </form>
+            </dialog>
+        </div>
+    </nav>
+    <main>
+        <section class="principal">
+            <div class="esqueda">
+                <h2>Bem-vindos ao projeto de Bioimpedância e Estatística do 2º ano B!</h2>
+                <p>
+                    Durante dois mês, nosso grupo mergulhou na ciência da saúde e dos números para monitorar a jornada do
+                    nosso voluntário, Brenno. O objetivo central? Analisar, através de dados concretos, sua busca por
+                    ganho de massa muscular, mesmo com as particularidades de sua dieta.
+                    Aqui você encontrará a união da Bioimpedância (que revela o que há por dentro) e da Estatística (que
+                    transforma esses números em conhecimento). Explore a nossa coleta de dados, os gráficos de evolução
+                    e as conclusões surpreendentes sobre corpo, dieta regrada e desempenho!</p>
+
+            </div>
+            <div class="direita">
+                <img src="https://uploads.metroimg.com/wp-content/uploads/2021/06/14183215/Melhores_Marmitas_Termicas_.jpg"
+                    alt="IMG DE COMIDA SAUDAVEL">
+            </div>
+        </section>
+
+        <section id="paciente">
+            <div class="risco"></div>
+            <div class="meio-principal">
+                <h4>Conheça o Brenno!</h4>
+                <p>Nosso voluntário, Brenno, é um jovem dedicado que está determinado a transformar seu corpo e alcançar
+                    seus objetivos de ganho de massa muscular. Com uma rotina disciplinada de exercícios e uma dieta
+                    cuidadosamente planejada, ele embarcou nesta jornada de um mês para monitorar seu progresso através
+                    da bioimpedância e da estatística. Acompanhe sua evolução e descubra como a ciência pode ajudar a
+                    alcançar resultados incríveis!</p>
+            </div>
+            <div class="informacoes">
+                <h3>Informações do Paciente:</h3>
+                <ul>
+                    <li><strong>Nome:</strong> Brenno</li>
+                    <li><strong>Idade:</strong> 16 anos</li>
+                    <li><strong>Altura:</strong> 1,80 m</li>
+                    <li><strong>Peso Inicial:</strong> 83 kg</li>
+                    <li><strong>Dieta:</strong> Rica em proteínas, com foco em ganho de massa muscular</li>
+                </ul>
+            </div>
+            <div class="foto-paciente">
+                <img src="https://media-gru2-2.cdn.whatsapp.net/v/t61.24694-24/473402289_993753742626713_8920240966633634353_n.jpg?ccb=11-4&oh=01_Q5Aa2wEMUnR0AVovejOu2wHW7Z2sRxsZXhVhgWITTvJ2EayYMQ&oe=6903CCB9&_nc_sid=5e03e0&_nc_cat=100"
+                    alt="FOTO DO BRENNO">
+                <p>Esta é a foto do nosso voluntário, Brenno, que está passando por essa jornada de transformação.</p>
+            </div>
+            <div class="risco"></div>
+        </section>
+
+        <section id="cardapio">
+            <div class="meio-principal">
+                <h2>Cardápio Semanal do Brenno</h2>
+                <p>Confira o cardápio cuidadosamente elaborado para o Brenno, focado em fornecer os nutrientes
+                    necessários para apoiar seu objetivo de ganho de massa muscular. Cada refeição foi planejada para
+                    garantir um equilíbrio adequado de proteínas, carboidratos e gorduras saudáveis.</p>
+            </div>
+            <div class="cardapio-semanal">
+                <h3>Cardápio Semanal</h3>
+                <ul>
+                    <li><strong>Café da Manhã:</strong> Café, pão integral e creatina 6g.</li>
+                    <li><strong>Almoço:</strong> Peito de frango grelhado 200g, arroz 400g, feijão 100g e 4 ovos.</li>
+                    <li><strong>Lanche da Tarde:</strong> Crepioca 100g de tapioca, 4 ovos e whey 30g.</li>
+                    <li><strong>Jantar:</strong> Peito de frango grelhado 200g, batata doce e arroz 400g.</li>
+                    <li><strong>Ceia:</strong> banana</li>
+                </ul>
+            </div>
+            <div class="cardapio-academia">
+                <h3>Suplementos para Academia</h3>
+                <ul>
+                    <li><strong>Pré-treino:</strong> 6g de creatina e 1 banana</li>
+                    <li><strong>Pós-treino:</strong> Crepioca 100g de tapioca, 4 ovos e whey 30g.</li>
+                </ul>
+            </div>
+            <div class="risco"></div>
+        </section>
+
+
+        <section id="imc">
+            <div class="container">
+
+                <h2>Cálculo e Análise de IMC do Brenno</h2>
+
+                <p>O Índice de Massa Corporal (IMC) é uma medida que relaciona o peso e a altura de uma pessoa, sendo
+                    amplamente utilizado para avaliar se um indivíduo está dentro de uma faixa de peso saudável. O IMC é
+                    calculado dividindo o peso (em kg) pela altura (em metros) ao quadrado.</p>
+
+                <h2>1. Dados Coletados (5 Primeiras Semanas)</h2>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Período</th>
+                            <th>Peso Registrado (kg)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1ª Pesagem (Início)</td>
+                            <td>83</td>
+                        </tr>
+                        <tr>
+                            <td>2ª Pesagem</td>
+                            <td>84</td>
+                        </tr>
+                        <tr>
+                            <td>3ª Pesagem</td>
+                            <td>85</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h2>2. Análise Estatística</h2>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Cálculo</th>
+                            <th>Fórmula</th>
+                            <th>Resultado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Média Aritmética (Peso Médio)</td>
+                            <td>(Soma dos Pesos) / (Nº de Pesagens)</td>
+                            <td><span class="destaque">84 kg</span></td>
+                        </tr>
+                        <tr>
+                            <td>Mediana</td>
+                            <td>Valor central do conjunto de dados</td>
+                            <td>84 kg</td>
+                        </tr>
+                        <tr>
+                            <td>Moda</td>
+                            <td>Valor que mais se repete</td>
+                            <td>Não Aplicável</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h2>3. Evolução e Conclusão Inicial (Foco em Massa)</h2>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Métrica de Evolução</th>
+                            <th>Cálculo</th>
+                            <th>Resultado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ganho Total de Peso</td>
+                            <td>Peso Final (85 kg) - Peso Inicial (83 kg)</td>
+                            <td><span class="destaque">+ 2 kg</span></td>
+                        </tr>
+                        <tr>
+                            <td>Taxa Média de Ganho Semanal</td>
+                            <td>Ganho Total / Períodos Analisados (2)</td>
+                            <td><span class="destaque">0.25 kg/semana</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p><strong>Conclusão:</strong> O paciente <span class="destaque">Brenno</span> demonstrou um
+                    <span class="destaque">ganho de peso constante de
+                        O.25 kg por semana</span> nos primeiros registros. Este resultado, de <span class="destaque">2 kg
+                        no total</span>, indica que o
+                    objetivo de ganhar peso (potencialmente massa muscular) está sendo alcançado com sucesso neste
+                    início de acompanhamento, o que reforça a eficácia da dieta controlada e do treino.</p>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 - Todos os direitos reservados ao Kaick Flauzino</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
