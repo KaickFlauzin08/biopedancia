@@ -215,15 +215,53 @@
                         </tr>
                     </tbody>
                 </table>
-
-                <p><strong>Conclusão:</strong> O paciente <span class="destaque">Brenno</span> demonstrou um
+                    <p><strong>Conclusão:</strong> O paciente <span class="destaque">Brenno</span> demonstrou um
                     <span class="destaque">ganho de peso constante de
                         O.25 kg por semana</span> nos primeiros registros. Este resultado, de <span class="destaque">2 kg
                         no total</span>, indica que o
                     objetivo de ganhar peso (potencialmente massa muscular) está sendo alcançado com sucesso neste
                     início de acompanhamento, o que reforça a eficácia da dieta controlada e do treino.</p>
             </div>
+        </section>
+        <section>
+            <div class="buttonsss">
+            <button id="openStats" class="btn-open">Ver Variância e DP</button>
+</div>
+                <dialog id="statsDialog" aria-labelledby="statsTitle" class="stats-dialog">
+                    <h3 id="statsTitle">Variância e Desvio Padrão — Cálculos</h3>
 
+                    <p><strong>Nota importante:</strong> Para os cálculos de Variância e Desvio Padrão (DP) foi assumido que os 8 alunos são a população total do estudo. Foi usada a fórmula populacional (dividindo por N).</p>
+
+                    <ul>
+                        <li><strong>Média de peso (geral)</strong><br>
+                                Soma total dos pesos: 1645,15 kg — Número de medições: 23 — Média ≈ 71,528 kg
+                        </li>
+
+                        <li><strong>Média de alturas</strong><br>
+                                Soma total das alturas: 14,04 m — Nº de alunos: 8 — Média = 1,755 m
+                        </li>
+
+                        <li><strong>Variância e DP (Peso 1)</strong><br>
+                                Média (Peso 1): 71,09375 kg — Variância (σ²) ≈ 200,5165 — DP (σ) ≈ 14,160 kg
+                        </li>
+
+                        <li><strong>Variância e DP (Peso 2)</strong><br>
+                                Média (Peso 2): 70,46875 kg — Variância (σ²) ≈ 193,2842 — DP (σ) ≈ 13,899 kg
+                        </li>
+
+                        <li><strong>Variância e DP (Peso 3)</strong><br>
+                                (7 medições, excluindo valor "x") Média ≈ 73,2357 kg — Variância (σ²) ≈ 156,4674 — DP (σ) ≈ 12,509 kg
+                        </li>
+
+                        <li><strong>Variância e DP (Geral — Alturas)</strong><br>
+                                Média (Alturas): 1,755 m — Variância (σ²) = 0,0048 — DP (σ) ≈ 0,069 m
+                        </li>
+                    </ul>
+
+                    <div class="dialog-actions">
+                        <button type="button" id="closeStats" class="btn-close">Fechar</button>
+                    </div>
+                </dialog>
         </section>
     </main>
     <footer>

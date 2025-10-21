@@ -34,3 +34,31 @@ form.addEventListener('submit', (e) => {
     showAlert();
     dialog.close();
 });
+
+
+
+//comentarios adicionais para o diálogo de estatísticas
+
+                    (function(){
+                        const openBtn = document.getElementById('openStats');
+                        const dialog = document.getElementById('statsDialog');
+                        const closeBtn = document.getElementById('closeStats');
+
+                        openBtn && openBtn.addEventListener('click', () => {
+                            if (typeof dialog.showModal === 'function') dialog.showModal();
+                            else dialog.setAttribute('open', ''); // fallback
+                        });
+
+                        closeBtn && closeBtn.addEventListener('click', () => {
+                            if (typeof dialog.close === 'function') dialog.close();
+                            else dialog.removeAttribute('open');
+                        });
+
+                        // fechar ao clicar fora
+                        dialog && dialog.addEventListener('click', (e) => {
+                            if (e.target === dialog) {
+                                if (typeof dialog.close === 'function') dialog.close();
+                                else dialog.removeAttribute('open');
+                            }
+                        });
+                    })();

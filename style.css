@@ -387,6 +387,126 @@ img{
     cursor: pointer;
 }
 
+
+/* Botão de abrir estatísticas */
+#openStats,
+.btn-open {
+    cursor: pointer;
+    padding: 0.4rem 0.7rem;
+    background: #eaa90c;
+    color: #113d60;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 16px;
+    box-shadow: 0 2px 6px rgba(17,61,96,0.18);
+}
+button#openStats:hover,
+.btn-open:hover {
+    background: #d5940a;
+    box-shadow: 0 4px 12px rgba(17,61,96,0.25);
+    transform: translateY(-2px);
+    transition: all 0.18s ease;
+    transform: scale(2.6);
+}
+/* Estilo do dialog de estatísticas */
+.stats-dialog {
+    max-width: 640px;
+    width: 92%;
+    padding: 1.1rem 1.2rem;
+    border-radius: 10px;
+    border: 1px solid rgba(17,61,96,0.12);
+    background: #ffffff;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    margin: 0 auto;
+    font-family: 'Geologica', sans-serif;
+    color: #333333;
+    box-sizing: border-box;
+    max-height: 80vh;
+    overflow: auto;
+}
+
+/* Título */
+.stats-dialog h3 {
+    margin: 0 0 0.5rem 0;
+    color: #113d60;
+    font-size: 1.25rem;
+}
+
+/* Parágrafos e lista */
+.stats-dialog p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #333333;
+    margin-bottom: 0.75rem;
+}
+
+.stats-dialog ul {
+    margin: 0.5rem 0 0;
+    padding-left: 1rem;
+    list-style: disc;
+}
+
+.stats-dialog li {
+    margin-bottom: 0.75rem;
+    font-size: 0.95rem;
+    color: #222222;
+}
+
+.stats-dialog li strong {
+    color: #113d60;
+}
+
+/* Destaques dentro do dialog */
+.stats-dialog .destaque {
+    color: #eaa90c;
+    font-weight: 700;
+}
+
+/* Ações do dialog */
+.stats-dialog .dialog-actions {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: flex-end;
+    margin-top: 1rem;
+}
+
+.stats-dialog .btn-close,
+#closeStats {
+    background: #6c757d;
+    color: #fff;
+    border: none;
+    padding: 0.45rem 0.65rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Animação discreta de entrada */
+.stats-dialog[open] {
+    animation: dialogFade 180ms ease;
+}
+
+@keyframes dialogFade {
+    from { transform: translateY(-6px) scale(0.995); opacity: 0; }
+    to   { transform: translateY(0) scale(1); opacity: 1; }
+}
+.buttonsss{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+    .stats-dialog {
+        max-width: 96%;
+        padding: 0.9rem;
+    }
+
+    .stats-dialog h3 { font-size: 1.05rem; }
+    .stats-dialog p,
+    .stats-dialog li { font-size: 0.92rem; }
+    #openStats, .btn-open { font-size: 15px; padding: 0.35rem 0.6rem; }
+}
 /*responsivelidade*/
 @media (max-width: 768px) {
     nav {
