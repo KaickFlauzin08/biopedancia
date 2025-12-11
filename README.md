@@ -17,4 +17,4 @@ Links:
 - GitHub: https://github.com/KaickFlauzin08
 - Instagram: https://www.instagram.com/kaickgflauzino08/?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D#
 
-Quer colaborar? Abra uma issue ou envie um pull request.
+Quer colaborar? envie um pull request.
